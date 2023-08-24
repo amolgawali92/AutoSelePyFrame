@@ -9,7 +9,7 @@ rows=sheet.max_row  # count no.of rows in an Excel sheet
 cols=sheet.max_column  # count no.of columns in an Excel sheet
 
 # Reading all the rows & columns from Excel sheet
-for r in range(1,rows+1):
+for r in range(1,rows+1):  # range function not calculating the last column and rows value,So thats why mentioned rows+1 and column+1)
     for c in range(1,cols+1):
         print(sheet.cell(r,c).value,end='    ')
     print()
